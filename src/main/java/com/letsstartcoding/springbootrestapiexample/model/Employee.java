@@ -24,6 +24,9 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
+        
+        @NotBlank
+	private String address;
 	
 	@NotBlank
 	private String name;
